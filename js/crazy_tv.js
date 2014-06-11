@@ -55,7 +55,7 @@ $(document).ready(function(){
             $(this).removeClass('hover_effect').dequeue();
         });
         turn(direction, frame_class);
-    }, 5000);
+    }, 3000);
     
      $('.controller span').bind('touchend mouseup', function (e) {
         e.preventDefault();
