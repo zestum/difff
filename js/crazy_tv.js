@@ -116,8 +116,8 @@ $(document).ready(function(){
     
     $("#tv_frame").show("fast");
     styles = '.carousel {width:593px;height:497px;position:absolute;top:210px;left:270px;z-index:-1;overflow:hidden;}';
-    styles += '.carousel ul {border:1px solid #666;position:relative;padding:0;margin:0;width:400%;margin-left:-593px;}';
-    styles += '.carousel ul li {list-style:none;display:inline-block;float:left;text-align:center;padding:0;margin:0;width:593px;margin-top:20px;}';
+    styles += '.carousel ul {list-style-type:none;border:1px solid #666;position:relative;padding:0;margin:0;width:400%;margin-left:-593px;border:none;}';
+    styles += '.carousel ul li {display:inline-block;float:left;text-align:center;padding:0;margin:0;width:593px;margin-top:20px;border:none;}';
     styles += '.controller {position:absolute;height:74px;width:158px;left:45px;}';
     styles += '.controller:hover {cursor:pointer;}';
     styles += '.controller.eyes {top:280px;}';
@@ -132,4 +132,11 @@ $(document).ready(function(){
     styles += '.hover {-webkit-user-select: none;-webkit-touch-callout: none;}';
     
     $('head').append('<style type="text/css">'+styles+'</style>');
+	//difff.ru local page template override
+	$('.carousel ul li').css('background','none');
+	$('.carousel ul').css('padding','0');
+	$('.carousel ul').css('margin-left','-593px');
+	$('.carousel ul li').css('padding','0');
+	$('.carousel ul li').css('margin-left','0');
+	$('.carousel ul li').css('text-align', 'center');
 })
